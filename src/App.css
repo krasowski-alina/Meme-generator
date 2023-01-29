@@ -4,6 +4,7 @@
 
 nav {
   height: 65px;
+  margin: 0 auto;
   background: linear-gradient(123deg, rgba(134,122,233,1) 10%, rgba(177,175,255,1) 50%, rgba(253,253,189,1) 90%);
   display: flex;
   align-items: center;
@@ -27,11 +28,12 @@ form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 20px;
+  margin-bottom: 10px;
 }
 .inputField {
   padding: 10px;
   font-size: 20px;
-  border: 1px solid black;
+  border: 1px solid #D5D4D8;
 
 }
 .btn {
@@ -52,4 +54,38 @@ form {
 }
 .memeImage {
   max-width: 100%;
+  padding: 40px;
+}
+.meme {
+  position: relative;
+}
+.memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 40px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+.bottom {
+  bottom: 0;
+}
+.top {
+  top: 0;
 }
